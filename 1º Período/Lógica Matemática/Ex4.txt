@@ -1,0 +1,414 @@
+Lista 1
+Ex 1- A
++-------+-------+
+|   p   |  ~p   |
+|-------+-------|
+| True  | False |
+| False | True  |
++-------+-------+
+Ex 1- B
++-------+-------+-----------+
+|   p   |   q   |  p and q  |
+|-------+-------+-----------|
+| True  | True  |   True    |
+| True  | False |   False   |
+| False | True  |   False   |
+| False | False |   False   |
++-------+-------+-----------+
+Ex 1- C
++-------+-------+----------+
+|   p   |   q   |  p or q  |
+|-------+-------+----------|
+| True  | True  |   True   |
+| True  | False |   True   |
+| False | True  |   True   |
+| False | False |  False   |
++-------+-------+----------+
+Ex 1- D
++-------+-------+---------+
+|   p   |   q   |  q = p  |
+|-------+-------+---------|
+| True  | True  |  True   |
+| True  | False |  False  |
+| False | True  |  False  |
+| False | False |  True   |
++-------+-------+---------+
+Ex 1- E
++-------+-------+-----------+
+|   p   |   q   |  P=>(~q)  |
+|-------+-------+-----------|
+| True  | True  |   True    |
+| True  | False |   True    |
+| False | True  |   True    |
+| False | False |   True    |
++-------+-------+-----------+
+Ex 1- F
++-------+-------+-------------+
+|   p   |   q   |  p or (~q)  |
+|-------+-------+-------------|
+| True  | True  |    True     |
+| True  | False |    True     |
+| False | True  |    False    |
+| False | False |    True     |
++-------+-------+-------------+
+Ex 1- G
++-------+-------+-----------------+
+|   p   |   q   |  (~p) and (~q)  |
+|-------+-------+-----------------|
+| True  | True  |      False      |
+| True  | False |      False      |
+| False | True  |      False      |
+| False | False |      True       |
++-------+-------+-----------------+
+Ex 1- H
++-------+-------+------------+
+|   p   |   q   |  p = (~q)  |
+|-------+-------+------------|
+| True  | True  |   False    |
+| True  | False |    True    |
+| False | True  |    True    |
+| False | False |   False    |
++-------+-------+------------+
+Ex 1- I
++-------+-------+---------------------+
+|   p   |   q   |  (p and (~q)) => p  |
+|-------+-------+---------------------|
+| True  | True  |        True         |
+| True  | False |        True         |
+| False | True  |        True         |
+| False | False |        True         |
++-------+-------+---------------------+
+Ex 2- A
++-------+-------+------------+
+|   p   |   q   |  ~p and q  |
+|-------+-------+------------|
+| True  | True  |   False    |
+| True  | False |   False    |
+| False | True  |    True    |
+| False | False |   False    |
++-------+-------+------------+
+Ex 2- B
++-------+-------+------------+
+|   p   |   q   |  p and ~q  |
+|-------+-------+------------|
+| True  | True  |   False    |
+| True  | False |    True    |
+| False | True  |   False    |
+| False | False |   False    |
++-------+-------+------------+
+Ex 2- C
++-------+-------+-------------+
+|   p   |   q   |  ~p and ~q  |
+|-------+-------+-------------|
+| True  | True  |    False    |
+| True  | False |    False    |
+| False | True  |    False    |
+| False | False |    True     |
++-------+-------+-------------+
+Ex 2- D
++-------+-------+-------------------+
+|   p   |   q   |  (~p or p) and q  |
+|-------+-------+-------------------|
+| True  | True  |       True        |
+| True  | False |       False       |
+| False | True  |       True        |
+| False | False |       False       |
++-------+-------+-------------------+
+Ex 3- A
++-------+-------+----------+
+|   p   |   q   |  q => p  |
+|-------+-------+----------|
+| True  | True  |   True   |
+| True  | False |   True   |
+| False | True  |  False   |
+| False | False |   True   |
++-------+-------+----------+
+Ex 3- B
++-------+---------+
+|   p   |  ~(~p)  |
+|-------+---------|
+| True  |  True   |
+| False |  False  |
++-------+---------+
+Ex 3- C
++-------+-------+--------------------+
+|   p   |   q   |  ~((~p) and (~q))  |
+|-------+-------+--------------------|
+| True  | True  |        True        |
+| True  | False |        True        |
+| False | True  |        True        |
+| False | False |       False        |
++-------+-------+--------------------+
+Ex 4- A
++-------+-------+-------+-------------------+
+|   p   |   q   |   r   |  (p or q) and ~r  |
+|-------+-------+-------+-------------------|
+| True  | True  | True  |       False       |
+| True  | True  | False |       True        |
+| True  | False | True  |       False       |
+| True  | False | False |       True        |
+| False | True  | True  |       False       |
+| False | True  | False |       True        |
+| False | False | True  |       False       |
+| False | False | False |       False       |
++-------+-------+-------+-------------------+
+Ex 4- B
++-------+-------+-------+---------------------------+
+|   p   |   q   |   r   |  (p and q) or ~(p and r)  |
+|-------+-------+-------+---------------------------|
+| True  | True  | True  |           True            |
+| True  | True  | False |           True            |
+| True  | False | True  |           False           |
+| True  | False | False |           True            |
+| False | True  | True  |           True            |
+| False | True  | False |           True            |
+| False | False | True  |           True            |
+| False | False | False |           True            |
++-------+-------+-------+---------------------------+
+Ex 4- C
++-------+-------+-------+---------------+
+|   p   |   q   |   r   |  ~(p and ~r)  |
+|-------+-------+-------+---------------|
+| True  | True  | True  |     True      |
+| True  | True  | False |     False     |
+| True  | False | True  |     True      |
+| True  | False | False |     False     |
+| False | True  | True  |     True      |
+| False | True  | False |     True      |
+| False | False | True  |     True      |
+| False | False | False |     True      |
++-------+-------+-------+---------------+
+Ex 4- D
++-------+-------+-------+----------------------+
+|   p   |   q   |   r   |  ~((q or r) and ~p)  |
+|-------+-------+-------+----------------------|
+| True  | True  | True  |         True         |
+| True  | True  | False |         True         |
+| True  | False | True  |         True         |
+| True  | False | False |         True         |
+| False | True  | True  |        False         |
+| False | True  | False |        False         |
+| False | False | True  |        False         |
+| False | False | False |         True         |
++-------+-------+-------+----------------------+
+Ex 5- A
++-------+-------+-------+------------------------+
+|   p   |   q   |   r   |  ~((p and r) or (~q))  |
+|-------+-------+-------+------------------------|
+| True  | True  | True  |         False          |
+| True  | True  | False |          True          |
+| True  | False | True  |         False          |
+| True  | False | False |         False          |
+| False | True  | True  |          True          |
+| False | True  | False |          True          |
+| False | False | True  |         False          |
+| False | False | False |         False          |
++-------+-------+-------+------------------------+
+Ex 5- B
++-------+-------+-------+------------------+
+|   p   |   q   |   r   |  (p or q) and r  |
+|-------+-------+-------+------------------|
+| True  | True  | True  |       True       |
+| True  | True  | False |      False       |
+| True  | False | True  |       True       |
+| True  | False | False |      False       |
+| False | True  | True  |       True       |
+| False | True  | False |      False       |
+| False | False | True  |      False       |
+| False | False | False |      False       |
++-------+-------+-------+------------------+
+Ex 5- C
++-------+-------+-------+--------------------+
+|   p   |   q   |   r   |  ~r => (p and ~q)  |
+|-------+-------+-------+--------------------|
+| True  | True  | True  |        True        |
+| True  | True  | False |       False        |
+| True  | False | True  |        True        |
+| True  | False | False |        True        |
+| False | True  | True  |        True        |
+| False | True  | False |       False        |
+| False | False | True  |        True        |
+| False | False | False |       False        |
++-------+-------+-------+--------------------+
+Ex 5- D
++-------+-------+-------+--------------------------------+
+|   p   |   q   |   r   |  ~((~p and ~q) and (r and p))  |
+|-------+-------+-------+--------------------------------|
+| True  | True  | True  |              True              |
+| True  | True  | False |              True              |
+| True  | False | True  |              True              |
+| True  | False | False |              True              |
+| False | True  | True  |              True              |
+| False | True  | False |              True              |
+| False | False | True  |              True              |
+| False | False | False |              True              |
++-------+-------+-------+--------------------------------+
+Lista 2
+Ex 3- A
++-------+-------+--------------+
+|   a   |   b   |  (~a) and b  |
+|-------+-------+--------------|
+| True  | True  |    False     |
+| True  | False |    False     |
+| False | True  |     True     |
+| False | False |    False     |
++-------+-------+--------------+
+Ex 3- B
++-------+-------+--------------------+
+|   a   |   b   |  (~b) => (a or b)  |
+|-------+-------+--------------------|
+| True  | True  |        True        |
+| True  | False |        True        |
+| False | True  |        True        |
+| False | False |       False        |
++-------+-------+--------------------+
+Ex 3- C
++-------+-------+----------------------+
+|   a   |   c   |  (c or a) = (~(~c))  |
+|-------+-------+----------------------|
+| True  | True  |         True         |
+| True  | False |        False         |
+| False | True  |         True         |
+| False | False |         True         |
++-------+-------+----------------------+
+Ex 3- D
++-------+-------+---------------+
+|   a   |   b   |  a or (a=>b)  |
+|-------+-------+---------------|
+| True  | True  |     True      |
+| True  | False |     True      |
+| False | True  |     True      |
+| False | False |     True      |
++-------+-------+---------------+
+Ex 3- E
++-------+-------+-------+-----------------------+
+|   a   |   c   |   d   |  (d or (~a)) => (~c)  |
+|-------+-------+-------+-----------------------|
+| True  | True  | True  |         False         |
+| True  | True  | False |         True          |
+| True  | False | True  |         True          |
+| True  | False | False |         True          |
+| False | True  | True  |         False         |
+| False | True  | False |         False         |
+| False | False | True  |         True          |
+| False | False | False |         True          |
++-------+-------+-------+-----------------------+
+Ex 3- F
++-------+-------+-------+--------------------------------+
+|   a   |   b   |   c   |  (~(a and b)) => (~(c and b))  |
+|-------+-------+-------+--------------------------------|
+| True  | True  | True  |              True              |
+| True  | True  | False |              True              |
+| True  | False | True  |              True              |
+| True  | False | False |              True              |
+| False | True  | True  |             False              |
+| False | True  | False |              True              |
+| False | False | True  |              True              |
+| False | False | False |              True              |
++-------+-------+-------+--------------------------------+
+Ex 4- A
++-------+-------+--------------+
+|   p   |   q   |  ~(p => ~q)  |
+|-------+-------+--------------|
+| True  | True  |     True     |
+| True  | False |    False     |
+| False | True  |    False     |
+| False | False |    False     |
++-------+-------+--------------+
+Ex 4- B
++-------+-------+-------+----------------+
+|   p   |   q   |   r   |  p = ~q and r  |
+|-------+-------+-------+----------------|
+| True  | True  | True  |     False      |
+| True  | True  | False |     False      |
+| True  | False | True  |      True      |
+| True  | False | False |     False      |
+| False | True  | True  |      True      |
+| False | True  | False |     False      |
+| False | False | True  |     False      |
+| False | False | False |     False      |
++-------+-------+-------+----------------+
+Ex 4- C
++-------+-------+--------------------------------+
+|   p   |   q   |  p => ~q and p or q = p or ~q  |
+|-------+-------+--------------------------------|
+| True  | True  |             False              |
+| True  | False |              True              |
+| False | True  |              True              |
+| False | False |             False              |
++-------+-------+--------------------------------+
+lista 3
+Ex 1
++-------+-------+-------+-------------------+
+|   T   |   D   |   L   |  (T and D) and L  |
+|-------+-------+-------+-------------------|
+| True  | True  | True  |       True        |
+| True  | True  | False |       False       |
+| True  | False | True  |       False       |
+| True  | False | False |       False       |
+| False | True  | True  |       False       |
+| False | True  | False |       False       |
+| False | False | True  |       False       |
+| False | False | False |       False       |
++-------+-------+-------+-------------------+
+Ex 2
++-------+-------+------------+
+|   M   |   A   |  M and ~A  |
+|-------+-------+------------|
+| True  | True  |   False    |
+| True  | False |    True    |
+| False | True  |   False    |
+| False | False |   False    |
++-------+-------+------------+
+Ex 3
++-------+-------+-------+--------------------------+
+|   A   |   B   |   R   |  (A and B) or (A and R)  |
+|-------+-------+-------+--------------------------|
+| True  | True  | True  |           True           |
+| True  | True  | False |           True           |
+| True  | False | True  |           True           |
+| True  | False | False |          False           |
+| False | True  | True  |          False           |
+| False | True  | False |          False           |
+| False | False | True  |          False           |
+| False | False | False |          False           |
++-------+-------+-------+--------------------------+
+Ex 3 pt 2
++-------+-------+-------+------------------+
+|   A   |   B   |   R   |  A and (B or R)  |
+|-------+-------+-------+------------------|
+| True  | True  | True  |       True       |
+| True  | True  | False |       True       |
+| True  | False | True  |       True       |
+| True  | False | False |      False       |
+| False | True  | True  |      False       |
+| False | True  | False |      False       |
+| False | False | True  |      False       |
+| False | False | False |      False       |
++-------+-------+-------+------------------+
+Ex 4
++-------+-------+-------+--------------------+
+|   R   |   M   |   C   |  (R and M) and ~C  |
+|-------+-------+-------+--------------------|
+| True  | True  | True  |       False        |
+| True  | True  | False |        True        |
+| True  | False | True  |       False        |
+| True  | False | False |       False        |
+| False | True  | True  |       False        |
+| False | True  | False |       False        |
+| False | False | True  |       False        |
+| False | False | False |       False        |
++-------+-------+-------+--------------------+
+Ex 5
++-------+-------+-------+---------------------------+
+|   A   |   H   |   T   |  (A and H) or (T and ~H)  |
+|-------+-------+-------+---------------------------|
+| True  | True  | True  |           True            |
+| True  | True  | False |           True            |
+| True  | False | True  |           True            |
+| True  | False | False |           False           |
+| False | True  | True  |           False           |
+| False | True  | False |           False           |
+| False | False | True  |           True            |
+| False | False | False |           False           |
++-------+-------+-------+---------------------------+
