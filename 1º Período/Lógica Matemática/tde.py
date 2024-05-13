@@ -10,36 +10,36 @@ class TabelaVerdade:
 
     def implicacao_p_q(self):
         for linha in self.matriz:
-            p = linha[0]
-            q = linha[1]
-            if p == 'V' and q == 'F':
+            a = linha[0]
+            b = linha[1]
+            if a == 'V' and b == 'F':
                 linha.append('F')
             else:
                 linha.append('V')
 
     def conjuncao_p_q(self):
         for linha in self.matriz:
-            p = linha[0]
-            q = linha[1]
-            if p == 'V' and q == 'V':
+            a = linha[0]
+            b = linha[1]
+            if a == 'V' and b == 'V':
                 linha.append('V')
             else:
                 linha.append('F')
 
     def disjuncao_p_q(self):
         for linha in self.matriz:
-            p = linha[0]
-            q = linha[1]
-            if p == 'V' or q == 'V':
+            a = linha[0]
+            b = linha[1]
+            if a == 'V' or b == 'V':
                 linha.append('V')
             else:
                 linha.append('F')
 
     def bicondicional_p_q(self):
         for linha in self.matriz:
-            p = linha[0]
-            q = linha[1]
-            if (p == 'V' and q == 'V') or (p == 'F' and q == 'F'):
+            a = linha[0]
+            b = linha[1]
+            if (a == 'V' and b == 'V') or (a == 'F' and b == 'F'):
                 linha.append('V')
             else:
                 linha.append('F')
