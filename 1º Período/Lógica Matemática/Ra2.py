@@ -21,6 +21,7 @@ print("O tesouro foi escondido em um local muito secreto do castelo, onde apenas
 print("Um dia o rei percebeu que seu precioso tesouro havia sido roubado.")
 print("O rei então chamou os melhores detetives do reino para desvendar o mistério do roubo do tesouro.")
 print("Seu objetivo é reunir pistas e deduzir quem foi o responsável por roubar o tesouro e onde ele ocorreu.")
+print("Os suspeitos são Sir Cedric, o cavaleiro responsável pela guarda do castelo, Lady Evelyn, uma dama jovem e astuta, Alexandre, o Ferreiro que conhecia os calabouços do castelo, o bobo da corte, que servia diretamente ao rei e Frei Benedictus, o monge que aconselhava o rei.")
 while True:
     if len(pistasescolhidas)==7:
         print("Você já escolheu todas as pistas.")
@@ -57,6 +58,7 @@ while True:
         print("Deduções:")
         for deducao in deducoes:
             print(deducao)
+        input()
         break
     elif senha=="4321":
         deducoesescolhidas=[]
