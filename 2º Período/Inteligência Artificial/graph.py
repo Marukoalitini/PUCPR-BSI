@@ -14,8 +14,8 @@ sns.set_style("whitegrid")
 # class of iris dataset. 
 sns.FacetGrid(iris, hue ="species",  
               height = 6).map(plt.scatter,  
-                              'sepal_length',  
-                              'petal_length').add_legend()
+                              'sepal_width',
+                              'petal_width').add_legend()
 
 
 plt.show()
